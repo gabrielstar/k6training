@@ -35,3 +35,13 @@ K6 przenaczone jest dla:
 Narzędzie jest darmowe ale posiada też płatną wersję, w której mamy dostęp do portalu w Chmurze gdzie możemy puszczać testy bez uterzymywania własnej infrastruktury. 
 
 ![](img/cloud.webp)
+
+
+## Gdzie się plasuje w stawce ?
+
+k6 rozwija się bardzo dynamicznie i konkuruje bezpośrednio z takimi narzędziami jak locust czy gatling.
+
+![](img/tools.jpg)
+
+    żródło: https://www.linkedin.com/in/lloyd-watts-5523374/
+
