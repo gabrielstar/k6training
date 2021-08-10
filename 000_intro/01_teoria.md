@@ -29,3 +29,8 @@ K6 przenaczone jest dla:
     - automatyzacja
 - Testuj w środowisku pre-produkcyjnym
   
+## Open Source vs Cloud
+
+Narzędzie jest darmowe ale posiada też płatną wersję, w której mamy dostęp do portalu w Chmurze gdzie możemy puszczać testy bez uterzymywania własnej infrastruktury. 
+
+![](img/cloud.webp)
