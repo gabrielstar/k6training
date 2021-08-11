@@ -1,5 +1,7 @@
 # Instalacja
 
+W tej części spojrzymy na CLI do k6.
+
 W systemie k6 [można zainstalować](https://k6.io/docs/getting-started/installation/):
 
 - z paczki systemowej dla systemu operacyjmego (np .msi)

@@ -1,6 +1,7 @@
 ## CLI
 
 1. Wejdz na https://red-water-022d04b03.azurestaticapps.net/
+
 - Wykonaj dowolne dwie akcje
 - Zapisz ruch w formacie HAR '03_odpowiedz.har'
 - Użyj CLI, żeby skonwertować plik HAR do testu k6 '03_odpowiedz.js'
