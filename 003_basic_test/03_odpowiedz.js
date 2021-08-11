@@ -11,7 +11,7 @@ export default function () {
 
 function sendPost() {
     let url = `${URL}/post/add/newpost`
-    let payload = JSON.stringify(
+    let payload = JSON.stringify( //The JSON.stringify() method converts a JavaScript object or value to a JSON string
         {
             "body": "k6 x " + Math.random(),
             "title": "Post from Gabriel's k6"
