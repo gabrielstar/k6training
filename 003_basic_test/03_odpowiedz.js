@@ -23,8 +23,9 @@ function sendPost() {
             'Content-Type': 'application/json',
         },
     };
-    http.request('POST',url, payload, params);
+    http.request('POST', url, payload, params);
 }
+
 function sendGet() {
-    http.request('GET',URL);
+    http.request('GET', URL);
 }
