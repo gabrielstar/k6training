@@ -1,6 +1,6 @@
 import { sleep } from "k6";
-import { submodule1 } from "./submodule1.js";
-import { submodule2 } from "./submodule2.js";
+import { submodule1 } from "./02_submodule1.js";
+import { submodule2 } from "./02_submodule2.js";
 
 export default function main() {
     submodule1();
