@@ -1,4 +1,4 @@
-//via constructor similar to c# and java
+//via constructor jak w C# lub JAVA
 class OOO {
     constructor(name, age, voice) {
         this.name = name;
@@ -32,7 +32,11 @@ var arr = [ooo];
 arr.push(o);
 arr.unshift(oo);
 
-for (var obj of arr) { //of not in
+//wyswietl standardowo
+for (var obj of arr) { //of not in !
     console.log(obj['name'] + ' at ' + obj.age + " gives a sound like ")
     obj.voice()
 }
+
+//lub z wykorzystaniem lambda syntax
+arr.forEach((e)=>{e.voice()})
