@@ -12,3 +12,4 @@
     - scenario on runtime
     - number of VUs on runtime
 7. Stream all data to Grafana
+8. If not succeeded by now try to crash the app from Azure DevOps
