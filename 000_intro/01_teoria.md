@@ -1,3 +1,26 @@
+#Co będzie się działo ?
+
+Na tym szkoleniu poznacie podstawy k6. Agenda:
+
+- HTTP - przypomnienie najważniejszych informacji
+- JavaScript w 15 minut
+- Instalujemy k6
+- Pierwszy test
+- Batching i grupowanie
+- Checki (sprawdzenia)
+- Thresholdy (Quality Gate'y)
+- Struktura testu
+- Cookiesy
+- Zmienne wbudowane i zewnętrzne
+- Tagowanie
+- Testowanie stron webowych
+- Azure i pipeline'y
+- Dzielenie testu na moduły
+- Wizualizacja wyników z Azure/Grafana/InfluxDB
+- Nagrywanie testów i k6 cloud
+- Hackathon
+
+
 # Czym jest k6 ?
 
 ![](img/logo.png)
