@@ -3,10 +3,15 @@
 pool:
   vmImage: 'ubuntu-latest'
 
+parameters:
+  - name: options
+    values:
+      - stressOptions
+      - smokeOptions
 steps:
   - pwsh: |
       ls
   - task: k6-load-test@0
     inputs:
       filename: '011_azure/http_get.js'
-      args: -e options=stressOptions
+      args: -e options=${{ parameters.options }}
