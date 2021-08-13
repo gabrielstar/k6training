@@ -8,5 +8,5 @@ steps:
       ls
   - task: k6-load-test@0
     inputs:
-      filename: '003_basic_test/http_get.js'
+      filename: '011_azure/http_get.js'
       args: -e options=stressOptions
