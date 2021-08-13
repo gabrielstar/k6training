@@ -5,10 +5,15 @@ const URL = "https://appxx.azurewebsites.net/"
 
 export let options = { //options allow to configure your test rum
     vus: 1,
-    iterations: 1,
+    //iterations: 1,
     thresholds: {
         'group_duration{group:::User Scenario::Log Out}': [' avg > 10'],
     },
+    stages: [
+        { duration: '20s', target: 10 }, //rampUp
+        { duration: '15s', target: 10 }, //true test
+        { duration: '5s', target: 0 }, //rampDown
+    ],
 };
 
 export default function () {

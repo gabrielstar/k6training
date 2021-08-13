@@ -45,3 +45,4 @@ k6 rozwija się bardzo dynamicznie i konkuruje bezpośrednio z takimi narzędzia
 
     żródło: https://www.linkedin.com/in/lloyd-watts-5523374/
 
+Zainstalujemy plugin do IDE. Intellij Enterprise edition.
