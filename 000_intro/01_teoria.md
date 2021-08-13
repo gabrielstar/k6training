@@ -73,4 +73,7 @@ k6 rozwija się bardzo dynamicznie i konkuruje bezpośrednio z takimi narzędzia
 
     żródło: https://www.linkedin.com/in/lloyd-watts-5523374/
 
-Zainstalujemy plugin do IDE. Intellij Enterprise edition.
+## IDE
+
+Zainstalujemy plugin do IDE. Intellij Enterprise edition (wersja 2021.1.3).
+Alternatywnie zainstalujcie plugin dla swojego IDE pierwszego wyboru.
