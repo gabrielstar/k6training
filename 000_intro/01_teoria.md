@@ -3,6 +3,11 @@
 ![](img/logo.png)
 
 [k6](https://k6.io/) to narzędzie typu open source do przerowadzania testów wydajnościowych. W k6 testy piszemy w javascripcie, natomiast samo narzędzie napisane jest w Go co czyni je bardzo wydajnym.
+## Wydajność
+
+k6 plasuje się na szczycie [najwydajniejszych narzędzi do testowania wydajności](https://k6.io/blog/comparing-best-open-source-load-testing-tools/#memory-usage-per-vu-level) :).
+
+![](img/RPSvMemory.webp)
 
 ## Cechy
 

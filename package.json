@@ -1,8 +1,0 @@
-{
-  "name": "k6training",
-  "version": "1.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    "k6": "0.0.0"
-  }
-}
