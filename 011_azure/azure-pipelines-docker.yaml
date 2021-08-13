@@ -9,7 +9,7 @@ steps:
     displayName: Pull k6 image
   - script: |
       docker run -i \
-        -v $(cd .. && pwd):/src \
+        -v `pwd`:/src \
         loadimpact/k6 \
         run /src/003_basic_test/http_get.js \
     displayName: Run k6 cloud
