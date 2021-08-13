@@ -75,5 +75,5 @@ k6 rozwija się bardzo dynamicznie i konkuruje bezpośrednio z takimi narzędzia
 
 ## IDE
 
-Zainstalujemy plugin do IDE. Intellij Enterprise edition (wersja 2021.1.3).
+Zainstalujemy plugin do [IDE Intellij Enterprise edition (wersja 2021.1.3).](https://plugins.jetbrains.com/plugin/16141-k6/versions)
 Alternatywnie zainstalujcie plugin dla swojego IDE pierwszego wyboru.
