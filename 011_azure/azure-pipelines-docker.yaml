@@ -9,7 +9,6 @@ steps:
     displayName: Pull k6 image
   - script: |
       docker run -i \
-        -e K6_CLOUD_TOKEN=$(K6_CLOUD_TOKEN) \
         -v `pwd`/../:/src \
         loadimpact/k6 \
         /src/003_basic_test/http_get.js \
