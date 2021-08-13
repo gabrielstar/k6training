@@ -1,7 +1,7 @@
 ## Javascript - podstawy
 
 
-1. Zadeklaruj (w IDE lub Chrome/snippets) listę kilku obiektów o następującej strukturze:
+1. Zadeklaruj listę kilku obiektów o następującej strukturze:
 ```javascript
     {
         name: ...
@@ -12,6 +12,6 @@
 
 2. Voice powinno być funkcją
 3. Ziteruj po całej liście i dla każdego obiektu
--  wyświetl name i age,
+- wyświetl name i age,
 - wykonaj funkcje voice
 4. Zadanie zrealizuj w snippetach w Google Chrome
