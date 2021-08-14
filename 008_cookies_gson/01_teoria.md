@@ -5,6 +5,7 @@
 Protokół HTTP jest bezstanowy. To znaczy że dwa kolejne żądania HTTP nie są ze sobą związane. Ciasteczka są mechanizmem pozwalającym zapisywać stan na urządzeniu użytkownika (np. sessionId) i wiązać wiele żądań do jednej sesji.
 
 ![cookies](img/cookies.png)
+
 ``docs.microsoft.com``
 
 
