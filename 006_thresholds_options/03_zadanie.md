@@ -8,6 +8,8 @@
 - 20-35s -> 10 VU
 - 35-40s -> 0 VU
 
+Sprawdż jak się zmienił output testu.
+
 2. Thresholdy: Zdefiniuj Quality Gate:
 
 - średni czas trwania grupy 'Log Out' powinien być mniejszy niż 10ms 

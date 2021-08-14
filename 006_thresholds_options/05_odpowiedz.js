@@ -14,13 +14,6 @@ export let options = { //options allow to configure your test rum
         { duration: '15s', target: 10 }, //true test
         { duration: '5s', target: 0 }, //rampDown
     ],
-    scenarios: { //pozwala definiować wiele różnych scenariuszy w ramach jednego testu
-        example_scenario: {
-            executor: 'shared-iterations',
-            vus: 2,
-            iterations: 2,
-        },
-    },
 };
 
 export default function () {
