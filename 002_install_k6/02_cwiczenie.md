@@ -7,6 +7,7 @@
     - Zapisz ruch w formacie HAR '03_odpowiedz.har' z użyciem Chrome DevTools/Network Tab 
     - Użyj CLI, żeby skonwertować plik HAR do testu k6 o nazwie 'odpowiedz.js'
     - Użyj do tego polecenia har convert, skorzystaj z pomocy
+    - Przejrzyj wygenerowany skrypt. W trakcie szkolenie wszystkie zawarte tam elementy będziemy wyjaśniać. 
 
 2. Uruchom nagrwany wczesniej test z pełnym debugowaniem np:
 
