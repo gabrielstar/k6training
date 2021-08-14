@@ -1,4 +1,10 @@
-# test structure
+# Cykl życia testu
+
+[Istnieją 4 cykle życia testu w k6](https://k6.io/docs/using-k6/test-life-cycle/):
+- init (init code)
+- setup (setup code)
+- VU (VU code)
+- teardown (teardown code)
 
 ```js
 // 1. init code

@@ -1,4 +1,4 @@
-//via constructor jak w C# lub JAVA
+//recommended via constructor jak w C# lub JAVA - https://www.linkedin.com/feed/update/urn:li:activity:6832168329235439616/
 class OOO {
     constructor(name, age, voice) {
         this.name = name;
@@ -9,7 +9,7 @@ class OOO {
 var ooo = new OOO("Witek", 22, () => {
     console.log("aasadasdsd")
 });
-//via constructor function
+//via constructor function - not recommended
 var OO = function (name, age, voice) {
     this.name = name;
     this.age = age;
@@ -18,7 +18,7 @@ var OO = function (name, age, voice) {
 var oo = new OO("Romek", 12, function () {
     console.log("blrlrllr")
 })
-//via object literal
+//via object literal, recommended
 var o = {
     name: "Gabriel",
     age: 37,
