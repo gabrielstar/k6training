@@ -25,9 +25,35 @@ INFO[0000] Test: this is user 1  and iter 0 iteration    source=console
 INFO[0000] Test: this is user 3  and iter 0 iteration    source=console                                                 INFO[0000] Test: this is user 2  and iter 0 iteration    source=console                                                 INFO[0000] Test: this is user 1  and iter 1 iteration    source=console
 INFO[0000] Teardown: this is user 0  and iter 0 iteration  source=console    
 ```
+## Scnariusze, Executory
 
-https://k6.io/docs/using-k6/scenarios/executors/
+### Scenariusze
+[Scenariusze](https://k6.io/docs/using-k6/scenarios) są elementem Opcji i pozwalają na tworzenie bardziej zaawansowanych konfiguracji testowych, takich składających się z wielu 
+pod konfiguracji.
 
-Executors are the workhorses of the k6 execution engine. Each one schedules VUs and iterations differently, and you'll choose one depending on the type of traffic you want to model to test your services.
+```javascript
+export let options = {
+    scenarios: {
+        smoke: {
+            vus: 1,
+            ...
+        },
+        stress: {
+            vus: 100,
+            ...
+        }
+    }
 
-https://k6.io/docs/using-k6/scenarios
+};
+```
+
+Scnariusze:
+- scenariusze pozwalają na użycie różnych egzekutorów w każdym z nich. Egzekutory sterują rozdziałem iteracji między VU.
+- mogą się uruchamiać szeregowo lub równolegle
+- każdy scenariusz może mieć inne zmienne środowiskowe i tagi
+
+### Egzekutory
+
+
+[Egzekutory](https://k6.io/docs/using-k6/scenarios/executors/) rozdzielają VU i iteracje.
+![cookies](img/executors.png)
