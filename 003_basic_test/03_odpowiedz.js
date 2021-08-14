@@ -5,13 +5,13 @@ const URL = "https://appxx.azurewebsites.net/"
 
 export default function () {
     sendGet();
-    sleep(1);
+    sleep(1); //introducing delays
     sendPost();
 }
 
 function sendPost() {
     let url = `${URL}/post/add/newpost`
-    let payload = JSON.stringify( //The JSON.stringify() method converts a JavaScript object or value to a JSON string
+    let payload = JSON.stringify(
         {
             "body": "k6 x " + Math.random(),
             "title": "Post from Gabriel's k6"
