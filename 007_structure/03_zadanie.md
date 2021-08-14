@@ -7,7 +7,8 @@ Napisz taki test:
 3. Przekaż body tej odpowiedzi z **setup** do fazy **VU**, użyj tego body do stworzenia nowego posta wykorzystując endpoint:
 ```
          POST https://appxx.azurewebsites.net/post/add/newpost
-         'Content-Type': 'application/json',
+         'Content-Type': 'application/json'
+         
          {
                "body": "...",
                "title": "..."
