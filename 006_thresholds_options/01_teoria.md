@@ -44,3 +44,5 @@ export let options = {
     httpDebug: 'full'
 }
 ```
+
+> Elementy 'export' muszą zawsze znajdować się na pierwszym poziomie w skrypcie. 
