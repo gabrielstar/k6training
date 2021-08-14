@@ -1,16 +1,20 @@
 ## CLI
 
-1. Wejdz na https://red-water-022d04b03.azurestaticapps.net/
+1. Wejdź na stronę testową https://red-water-022d04b03.azurestaticapps.net/
 
-- Wykonaj dowolne dwie akcje
-- Zapisz ruch w formacie HAR '03_odpowiedz.har'
-- Użyj CLI, żeby skonwertować plik HAR do testu k6 '03_odpowiedz.js'
+- Zapoznaj się ze źródłem (Chrome - Ctrl+U)
+- Wykonaj dowolne dwie akcje w przeglądarce
+- Zapisz ruch w formacie HAR '03_odpowiedz.har' z użyciem Chrome DevTools/Network Tab 
+- Użyj CLI, żeby skonwertować plik HAR do testu k6 o nazwie 'odpowiedz.js'
 - Użyj do tego polecenia har convert, skorzystaj z pomocy
 
-2. Uruchom nagrwany wczesniej test z pełnym debugowaniem
+2. Uruchom nagrwany wczesniej test z pełnym debugowaniem np:
 
 ```powershell
+    k6 run --http-debug --vus 10 --duration 30s 03_odpowiedz.js
     k6 run --http-debug=full --vus 10 --duration 30s 03_odpowiedz.js
 ``` 
+
+Czym różnią się obydwa tryby ?
 
 
