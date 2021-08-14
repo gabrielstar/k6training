@@ -1,12 +1,15 @@
-# Batching and grouping
+# Batching i grupowanie
 
-## Baching służy do wysyłania żądań równolegle
-- w k6 można podać albo listę elementów albo obiekt
+## Bacthing
 
-## Grouping służy do organizowania żądań np. w Page Views 
+[Batching](https://k6.io/docs/javascript-api/k6-http/batch-requests) służy do wysyłania żądań równolegle. W k6 do batcha można podać albo listę elementów (żądań) albo obiekt.
 
-https://k6.io/docs/javascript-api/k6/group-name-fn/
+## Grupowanie 
 
+[Grupowanie](https://k6.io/docs/javascript-api/k6/group-name-fn/) służy do organizowania żądań w większą całość np. w Page Views 
+
+
+Jeśli żądania wykonują się równolegle i odpowiednio długo na serwerze na kliencie możemy podejrzeć jak zmienia się liczba nawiązanych połączeń TCP
 
 ```powershell
 while ($true) {
