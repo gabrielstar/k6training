@@ -5,6 +5,7 @@
   - uruchamiany 1x na test na początku testu
   - może czytać z dysku np. pliki
   - dzięki wydzieleniu fazy init testowanie rozproszone jest prostsze (dla twórców k6)
+  - k6 dostarczy wszystkie dane do fazy VU w pamięci
 - **setup** (setup code):
   - uruchamiany 1x na test
   - faza przygotowania testu 
@@ -14,7 +15,7 @@
   - wymagany przynajmniej blok default, 
   - tutaj są wykonywane akcje w ramach iteracji użytkownika
   - nie można importować modułów
-  - nie można czytać z dysku! 
+  - nie można czytać z dysku! - ma czytać z pamięci, żeby systemy RW nie były potrzebne w trybie rozproszonym
 - **teardown** (teardown code), faza finalizacji
   - uruchamiany 1x na test
   - ma dostęp do danych z fazy setup
