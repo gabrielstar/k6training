@@ -2,16 +2,7 @@
 
 W tej części poznamy kolejne elementy konfiguracyjne naszego testu: Opcje, Progi
 
-[Thresholds (Progi)](https://k6.io/docs/using-k6/thresholds/) to mechanizmy sprawdzeń, które klasyfikują nasz test jako: PASS albo FAIL
 
->Thresholds are a pass/fail criteria used to specify the performance expectations of the system under test.
-Thresholds can act as quality gates.
-
-Różnica między checkami i thresholdami będzie widoczna również w exit codzie testu.
-
-```powershell
-     k6 run --iterations=1 .\02_thresholds.js;echo $?
-```
 
 [Options (Opcje)](https://k6.io/docs/using-k6/options/) pozwalają na zaawansowaną konfigurację zachowania naszego testu z poziomu kodu (nie z CLI).
 
@@ -43,6 +34,16 @@ export let options = {
     batch: 15, //maksymalna liczba równoległych żądań w batchu
     httpDebug: 'full'
 }
+```
+[Thresholds (Progi)](https://k6.io/docs/using-k6/thresholds/) to mechanizmy sprawdzeń, które klasyfikują nasz test jako: PASS albo FAIL
+
+>Thresholds are a pass/fail criteria used to specify the performance expectations of the system under test.
+Thresholds can act as quality gates.
+
+Różnica między checkami i thresholdami będzie widoczna również w exit codzie testu.
+
+```powershell
+     k6 run --iterations=1 .\02_thresholds.js;echo $?
 ```
 
 > Elementy 'export' muszą zawsze znajdować się na pierwszym poziomie w skrypcie. 
