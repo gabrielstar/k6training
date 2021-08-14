@@ -1,15 +1,17 @@
-# struktura
+# Cykl życia
 
-1. Wykonaj żadanie https://appxx.azurewebsites.net/ w setup
-2. Przekaż body odpowiedzi do głównej funkcji, użyj body do stworzenia nowego posta
+Napisz taki test:
 
+1. W fazie **init** zdefiniuj zmienną/stałą `url=https://appxx.azurewebsites.net/`
+2. W fazie **setup** wykonaj żadanie o `GET https://appxx.azurewebsites.net/`
+3. Przekaż body poprzedniej odpowiedzi z **setup** do fazy **VU**, użyj tego body do stworzenia nowego posta
+```
          POST https://appxx.azurewebsites.net/post/add/newpost
          'Content-Type': 'application/json',
          {
-               "body": "k6",
-               "title": "Post from k6"
-          }
-         
-  
+               "body": "...",
+               "title": "..."
+         }
+ ```
     
-3. zmodyfikuj zawartosc data czy modyfikacja widoczna jest w teardown  
+4. Zmodyfikuj zawartosc danych (data) w fazie **VU**. Czy modyfikacja widoczna jest w fazie **teardown**? Sprawdź.  
