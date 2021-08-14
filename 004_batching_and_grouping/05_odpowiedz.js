@@ -8,7 +8,7 @@ export default function () {
        { method: 'GET', url: URL},
        { method: 'GET', url: URL}
    ]
-    let namedRequests = {
+    let namedRequests = { //you can mix URLs and objects
         'first' : URL,
         'second': { method: 'GET', url: URL}
     }
