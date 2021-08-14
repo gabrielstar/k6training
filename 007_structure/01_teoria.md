@@ -4,7 +4,7 @@
 - **init** (init code):
   - uruchamiany 1x na test na początku testu
   - może czytać z dysku np. pliki
-  - dzięki wydzieleniu fazy init tetsowanie rozproszone jest prostsze (dla twórców k6)
+  - dzięki wydzieleniu fazy init testowanie rozproszone jest prostsze (dla twórców k6)
 - **setup** (setup code):
   - uruchamiany 1x na test
   - faza przygotowania testu 
