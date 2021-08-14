@@ -1,4 +1,5 @@
 import http from 'k6/http';
+import {check} from 'k6';
 
 export default function () {
     cookies();
@@ -22,6 +23,8 @@ function gson(){
 
 function posts(){
     let res = http.get('https://jsonplaceholder.typicode.com/posts');
-    console.log("user IDS are" + res.json("#.userId")) //https://github.com/tidwall/gjson#path-syntax
-
+    console.log("user IDS are" + JSON.stringify(res.json("#.userId"))) //https://github.com/tidwall/gjson#path-syntax
+    check(res.json("#.userId"),{
+        'userId 10 is on the list': (ids) => (ids.includes(10))
+    })
 }
