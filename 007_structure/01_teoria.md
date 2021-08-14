@@ -1,21 +1,21 @@
 # Cykl życia testu
 
 [Istnieją 4 cykle życia testu w k6](https://k6.io/docs/using-k6/test-life-cycle/):
-- init (init code):
+- **init** (init code):
   - uruchamiany 1x na test na początku testu
   - może czytać z dysku np. pliki
   - dzięki wydzieleniu fazy init tetsowanie rozproszone jest prostsze (dla twórców k6)
-- setup (setup code):
+- **setup** (setup code):
   - uruchamiany 1x na test
   - faza przygotowania testu 
   - może przekazać dane do fazy VU
   - przekazane dane są read-only
-- VU (VU code):
+- **VU** (VU code):
   - wymagany przynajmniej blok default, 
   - tutaj są wykonywane akcje w ramach iteracji użytkownika
   - nie można importować modułów
   - nie można czytać z dysku! 
-- teardown (teardown code), faza finalizacji
+- **teardown** (teardown code), faza finalizacji
   - uruchamiany 1x na test
   - ma dostęp do danych z fazy setup
     
