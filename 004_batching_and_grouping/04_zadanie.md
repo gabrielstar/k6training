@@ -6,10 +6,12 @@ Stwórz test, który ma jedną grupę główną i 2 podgrupy
 
 grupa:
 - grupa 1:
+    batch(...)
 - grupa 2:
+    batch(...)
 ```
 
-W obu wyślij po 2 żądania do
+W obu wyślij po 2 równoległe żądania do
 
 `GET https://appxx.azurewebsites.net`
 
