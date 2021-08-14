@@ -73,7 +73,12 @@ k6 rozwija się bardzo dynamicznie i konkuruje bezpośrednio z takimi narzędzia
 
     żródło: https://www.linkedin.com/in/lloyd-watts-5523374/
 
-## IDE
+## Co będziemy potrzebowali ?
+
+- IDE (np. IntelliJ)
+- Git
+- Windows Terminal
+- Azure Subscription - DevOps/Portal
 
 Zainstalujemy plugin do [IDE Intellij Enterprise edition (wersja 2021.1.3).](https://plugins.jetbrains.com/plugin/16141-k6/versions)
 Alternatywnie zainstalujcie plugin dla swojego IDE pierwszego wyboru.
