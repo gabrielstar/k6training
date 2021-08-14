@@ -25,16 +25,15 @@ export let options = {
         http_req_duration: ['p(95)<200'], // 95% of requests should be below 200ms
     },
     scenarios: { //pozwala definiować wiele różnych scenariuszy w ramach jednego testu
-        example_scenario: {
-            vus: 2,
-            iterations: 2,
-        },
+        ...
     },
     discardResponseBodies: true,
     batch: 15, //maksymalna liczba równoległych żądań w batchu
     httpDebug: 'full'
 }
 ```
+Niektóre opcje mogą się wzajemnie wykluczać.
+
 ***
 [Thresholds (Progi)](https://k6.io/docs/using-k6/thresholds/) to mechanizmy sprawdzeń, które klasyfikują nasz test jako: PASS albo FAIL
 
