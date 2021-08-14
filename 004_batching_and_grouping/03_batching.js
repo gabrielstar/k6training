@@ -1,7 +1,7 @@
 import http from 'k6/http';
 import {sleep, group} from 'k6';
 
-const URL = "https://appxx.azurewebsites.net/"
+const URL = "https://appxx.azurewebsites.net/" //our backend
 
 export default function () {
     group('Get Main Page over 5 TCP connections', function(){
