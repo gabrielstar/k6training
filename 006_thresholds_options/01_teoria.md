@@ -35,6 +35,7 @@ export let options = {
     httpDebug: 'full'
 }
 ```
+***
 [Thresholds (Progi)](https://k6.io/docs/using-k6/thresholds/) to mechanizmy sprawdzeń, które klasyfikują nasz test jako: PASS albo FAIL
 
 >Thresholds are a pass/fail criteria used to specify the performance expectations of the system under test.
