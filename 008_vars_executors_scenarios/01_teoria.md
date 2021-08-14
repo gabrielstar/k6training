@@ -55,5 +55,5 @@ Scnariusze:
 ### Egzekutory
 
 
-[Egzekutory](https://k6.io/docs/using-k6/scenarios/executors/) rozdzielają VU i iteracje.
+[Egzekutory](https://k6.io/docs/using-k6/scenarios/executors/) rozdzielają VU i iteracje. Każdy robi to w trochę inny sposób i tester powinien dopasować najlepszy egzekutor do sytuacji.
 ![cookies](img/executors.png)
