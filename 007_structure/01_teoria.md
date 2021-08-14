@@ -20,6 +20,8 @@
   - uruchamiany 1x na test
   - ma dostęp do danych z fazy setup
     
+Przykład:
+
 ```js
 // 1. init code start
 var counter = 0;
