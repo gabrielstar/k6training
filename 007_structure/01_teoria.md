@@ -6,6 +6,7 @@
   - może czytać z dysku np. pliki
   - dzięki wydzieleniu fazy init testowanie rozproszone jest prostsze (dla twórców k6)
   - k6 dostarczy wszystkie dane do fazy VU w pamięci
+  - w init code nie możesz wysyłać żądań, dynamiczne dane można ustawiać w setup
 - **setup** (setup code):
   - uruchamiany 1x na test
   - faza przygotowania testu 
