@@ -2,11 +2,11 @@
 
 1. Wejdź na stronę testową https://red-water-022d04b03.azurestaticapps.net/
 
-- Zapoznaj się ze źródłem (Chrome - Ctrl+U)
-- Wykonaj dowolne dwie akcje w przeglądarce
-- Zapisz ruch w formacie HAR '03_odpowiedz.har' z użyciem Chrome DevTools/Network Tab 
-- Użyj CLI, żeby skonwertować plik HAR do testu k6 o nazwie 'odpowiedz.js'
-- Użyj do tego polecenia har convert, skorzystaj z pomocy
+    - Zapoznaj się ze źródłem (Chrome - Ctrl+U)
+    - Wykonaj dowolne dwie akcje w przeglądarce
+    - Zapisz ruch w formacie HAR '03_odpowiedz.har' z użyciem Chrome DevTools/Network Tab 
+    - Użyj CLI, żeby skonwertować plik HAR do testu k6 o nazwie 'odpowiedz.js'
+    - Użyj do tego polecenia har convert, skorzystaj z pomocy
 
 2. Uruchom nagrwany wczesniej test z pełnym debugowaniem np:
 
