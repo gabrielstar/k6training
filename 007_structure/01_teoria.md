@@ -21,7 +21,8 @@
     
 ```js
 // 1. init code start
-var 
+var counter = 0;
+var file = ...;
 // 2. init code end
 export function setup() {
   // 2. setup code
@@ -31,6 +32,7 @@ export function setup() {
 
 export default function (data) {
   // 3. VU code
+  counter ++; //data from init code is availabe between iteartions of the same VU
 }
 
 export function teardown(data) {
