@@ -1,12 +1,10 @@
-Uyzj https://k6.io/docs/using-k6/scenarios/executors/per-vu-iterations i zobacz jak zmieniaja sie zmienne
+## Scenariusz i egzekutory
 
-per-vu-iterations
+1. Zmodyfikuj scenariusz aby opcje zawierały scenariusz gdzie executor to 'per-vu-iterations'. Uruchom z 3 VU i 4 iteracjami. 
+2. Rozszerz test z tego modułu tak, aby:
 
-i zobacz jak sie zmieniaja zmienne
-
-```powershell
-
-k6 run .\04_odpowiedz.js --out csv
-```
-
-zobacz gdzie znajduja sie tagi
+- konfiguracja składała się z 3 scenariuszy symulując wzrost i spadek aktywnych użytkowników w trakcie testu
+    - scenariusz 1: 0-10s, od 0 do 10 VU
+    - scenariusz 2: 0-10s, od 0 do 5 VU
+    - scenariusz 3: 10s-20s, 15 VU
+- dobierz egzekutory do scenariuszy na podstawie dokumentacji.

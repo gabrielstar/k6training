@@ -1,7 +1,7 @@
 # Zmienne kontekstowe (context VARS), executory, scenariusze
 
 ## __VU,__ITER
-K6 posiada dwie przydatne, wbudowane zmienne globalne:
+K6 posiada dwie przydatne, wbudowane zmienne globalne, ktore mogą służyć między innymi do randomizacji akcji:
 
 **__VU** - obecny VU (1 ..n)
 
@@ -16,7 +16,7 @@ __VU
 
 Uruchommy test i sprawdźmy wartości tych zmiennych:
 ```powershell
-    k6 run --vus=3 --iterations=4 .\02_tags.js
+    k6 run --vus=3 --iterations=4 .\02_http_get.js
 ```
 output
 ```shell
