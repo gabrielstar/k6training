@@ -6,7 +6,10 @@
 Tagi mogę być:
 - zdefiniowane przez użytkownika
 - systemowe (mające konkrente znaczenie w k6)
-Uruchomimy test i sprawdzimy jak tagio prezentują się w wynikach:
+
+Przykłady zastosowań tagów najlepiej prześledzić na: https://k6.io/docs/using-k6/tags-and-groups/
+
+Uruchomimy test i sprawdzimy jak tagi prezentują się w wynikach:
 
 ```powershell
 k6 run .\02_tags.js --out csv
