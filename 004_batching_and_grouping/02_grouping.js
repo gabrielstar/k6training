@@ -4,7 +4,7 @@ import {group, sleep} from 'k6';
 const URL = "https://appxx.azurewebsites.net/"
 
 export default function () {
-    group('Get Main Page', function () {
+    group('Get Main Page', function () { //
         sendGet();
     });
     sleep(1);
