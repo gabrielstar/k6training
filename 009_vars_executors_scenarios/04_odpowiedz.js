@@ -12,23 +12,21 @@ let optionsPerVU = {
 let optionsScenarios = {
     discardResponseBodies: true,
     scenarios: {
-        start1: {
+        buyers: {
             executor: 'ramping-vus',
             startVUs: 0,
-            tags: {type: 'buyers'},
             stages: [
                 {duration: '10s', target: 10}
             ]
         },
-        start2: {
+        bots: {
             executor: 'ramping-vus',
             startVUs: 0,
-            tags: {type: 'bots'},
             stages: [
                 {duration: '10s', target: 5}
             ]
         },
-        main: {
+        customers: {
             executor: 'constant-vus',
             vus: 15,
             startTime: '10s',
