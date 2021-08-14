@@ -5,8 +5,14 @@ W tej części spojrzymy na podstawe żądania w [k6/http](https://k6.io/docs/ja
 - GET
 - POST
 - REQUEST
+- ...
 
-Parametry z linii poleceń możemy przekazywać przez -e lub k6 może czytać zmienne środowiskowe powłoki.
+Nauczymy się przekazywać parametery do środka testu z CLi z użyciem zmiennych środowiskowych.
+Z linii poleceń możemy:
+- przekazywać je przez -e lub
+- k6 może czytać zmienne środowiskowe powłoki.
+
+Przykłady:
 
 ```powershell
     k6 run -e BODY="my perfect body" http_post_env.js
