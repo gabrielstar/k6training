@@ -4,7 +4,7 @@ export default function () {
     cookies();
     gson();
 }
-
+//przykład użycia cookieJar() i gson
 function cookies(){
     const jar = http.cookieJar();
     jar.set('https://httpbin.org/cookies', 'my_cookie', 'hello world');
