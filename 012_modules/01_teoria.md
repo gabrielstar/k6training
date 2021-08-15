@@ -5,11 +5,13 @@ Oprócz grupowania, funckji i tagów do organizacji testów przydaje się pozdzi
 W tej części zobaczymy jak zrobić. Przykład:
 
 ```javascript
+import { sleep } from "k6";
 import { zaloguj } from "./logowanie.js";
 import { kup } from "./kupowanie.js";
 
 export default function main() {
     zaloguj();
+    sleep(4);
     kup();
 }
 ```
