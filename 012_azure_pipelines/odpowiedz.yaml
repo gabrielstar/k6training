@@ -5,7 +5,7 @@ pool:
 
 variables:
   - name: test
-    value: '012_azure/http_get.js'
+    value: '012_azure_pipelines/http_get.js'
 
 parameters:
   - name: options
