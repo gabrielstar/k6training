@@ -22,7 +22,7 @@ Konfigurujemy sieć poprzez reguły dla ruchu przychodzącego (inbound rules):
 - otwieramy port 8086 (influxdb)
 - otwieramy port 3000 (grafana UI)
 
-Weryfikujemy instalację `http://${IP}:3000/login` , `admin:admin`
+Weryfikujemy z naszej maszyny lokalnej instalację wpisując w przeglądarce `http://${IP}:3000/login` , `admin:admin`
 
 Sprawdzamy czy możemy wysyłać dane do grafany/influxdb (jeśli baza myk6db nie istnieje zostanie utworzona)
 
