@@ -8,7 +8,7 @@ K6 jest w stanie wysylać [dane](https://k6.io/docs/getting-started/results-outp
 
 ![grafana](img/grafana.png)
 
-#Azure VM Ubuntu 20.04 - instalacja Grafany
+## Azure VM Ubuntu 20.04 - instalacja Grafany
 
 Instalujemy pakiety:
 ```shell
@@ -29,7 +29,7 @@ Sprawdzamy czy możemy wysyłać dane do grafany/influxdb (jeśli baza myk6db ni
 ```powershell
     k6 run --out influxdb=http://${IP}:8086/myk6db http_get.js
 ```
-# Konfigurujemy dashboard
+## Konfigurujemy dashboard
 
 `) Zaimportujemy [dashboard](https://grafana.com/grafana/dashboards/2587
 ) z repozytoriów Community (manage dashobards->import)
