@@ -9,6 +9,9 @@ export let options = {
 export default function () {
     group('Get Main Page', function () {
         let res = http.get(URL);
+        check(res, { //check one or iterate over
+            'main page response code was 200': (res) => res.status == 200,
+        });
         let embeddedSources = getEmbeddedSource(res);
         group('Get Embedded Resources', function () { //iterate over embedded resources and download
             let parallelRequests = []
@@ -24,6 +27,7 @@ export default function () {
             let responses = http.batch(parallelRequests)
             check(responses[0], { //check one or iterate over
                 'embedded response code was 200': (res) => res.status == 200,
+                'all resources have been downloaded': () => responses.length === 3
             });
         });
     });
