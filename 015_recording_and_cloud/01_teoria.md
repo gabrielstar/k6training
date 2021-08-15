@@ -8,6 +8,8 @@ Plugin do nagrywania tworzy plik .HAR, które następnie zostaje przesłany do `
 - w postaci skryptu i kodu JS lub
 - do edytora wizualnego takiego jak np, w Postmanie
 
-W tej części wejdziemy na stronę https://red-water-022d04b03.azurestaticapps.net/ nagramy kilka akcji użytkownika i wyślemy nagaranie do `k6 Cloud
-Następnie odegramy ruch.
+W tej części wejdziemy na stronę https://red-water-022d04b03.azurestaticapps.net/ nagramy kilka akcji użytkownika i wyślemy nagranie do `k6 Cloud. Tam je wstępnie obrobimy.
+Następnie odegramy nagrany scenariusz.
+
+Istnieją inne możliwości nagrywania scenariuszy dla k6, wszystko co tworzy plik .HAR może być użyte do tego celu w tym automatyzacji na linii `przeglądarka -> test wydajnościowy`
 
