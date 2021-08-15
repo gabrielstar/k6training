@@ -1,7 +1,7 @@
 # Zmienne kontekstowe (context VARS), executory, scenariusze
 
 ## __VU,__ITER
-K6 posiada dwie przydatne, wbudowane zmienne globalne, ktore mogą służyć między innymi do randomizacji akcji:
+K6 posiada dwie przydatne, [wbudowane zmienne globalne](https://k6.io/docs/using-k6/execution-context-variables/), ktore mogą służyć między innymi do randomizacji akcji:
 
 **__VU** - obecny VU (1 ..n)
 
