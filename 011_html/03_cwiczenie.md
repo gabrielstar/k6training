@@ -1,13 +1,9 @@
+# Parsowanie HTML (zaawansowane)
 
-żeby stworzyć nowy post na https://red-water-022d04b03.azurestaticapps.net/
-i sciagnac go rownolegle
+Utwórz nowy test, w którym:
+- Pobierasz stronę https://red-water-022d04b03.azurestaticapps.net/
+- Parsujesz HTML i ekstrahujesz źródła "embedded resources" (css,js,png)
+- W następnym kroku pobierasz je równolegle
 
-```javascript
-    const req_script = parseHTML(res.body);
-    req_script.find(‘script’).toArray().forEach(function (item) {
-    console.log(item.attr(‘src’));
-    // do something
-});
-```
 
 

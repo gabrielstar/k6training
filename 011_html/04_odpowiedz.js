@@ -3,7 +3,9 @@ import {parseHTML} from 'k6/html';
 import {check, group, batch} from 'k6';
 
 const URL = 'https://red-water-022d04b03.azurestaticapps.net/';
-
+export let options = {
+    batch: 2 //max parallel request in batch
+}
 export default function () { //https://stackoverflow.com/questions/21117160/what-is-export-default-in-javascript
     group('Get Main Page', function () {
         let res = http.get(URL);
