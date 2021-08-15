@@ -31,7 +31,7 @@ Sprawdzamy czy możemy wysyłać dane do grafany/influxdb (jeśli baza myk6db ni
 ```
 ## Konfigurujemy dashboard
 
-1. Zaimportujemy [dashboard](https://grafana.com/grafana/dashboards/2587)z repozytoriów Community (manage dashobards->import)
+1. Zaimportujemy [dashboard](https://grafana.com/grafana/dashboards/2587) z repozytoriów Community (manage dashobards->import)
 2) Puścimy test i zanalizujemy rezultat
 ```powershell
 k6 run --iterations 100000 --vus 3 --out influxdb=http://${IP}:8086/myk6db http_get.js
