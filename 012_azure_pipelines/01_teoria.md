@@ -9,5 +9,5 @@ Aby puszczać testy [k6 z poziomu Azure DevOps](https://k6.io/blog/integrating-l
 
 ![pipelines](img/pipelines.png)
 
-W tej części
+W tej części zanalizujemy przykładowe pipeline'y YAML z dockerem i taskiem k6.
 
