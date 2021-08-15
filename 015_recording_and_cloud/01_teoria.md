@@ -13,3 +13,4 @@ Następnie odegramy nagrany scenariusz.
 
 Istnieją inne możliwości nagrywania scenariuszy dla k6, wszystko co tworzy plik .HAR może być użyte do tego celu w tym automatyzacji na linii `przeglądarka -> test wydajnościowy`
 
+Nie ma ćwiczenia do tego modułu. Zamiast tego będzie **Hackathon** :)
