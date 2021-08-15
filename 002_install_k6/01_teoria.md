@@ -24,5 +24,8 @@ Podstawowe polecenia w CLI:
 
 ![cli](img/cli.png)
 
+***
+Zainstalujemy plugin do [IDE Intellij Enterprise edition (wersja 2021.1.3).](https://plugins.jetbrains.com/plugin/16141-k6/versions)
+Alternatywnie zainstalujcie plugin dla swojego IDE pierwszego wyboru.
 
 W k6 zamiast wątka (thread) używa się terminu "Virtual User (VU)".
