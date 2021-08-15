@@ -10,7 +10,7 @@ export let options = {
             exec: 'noTags',
             iterations: 1,
             tags: {
-                selected: 'true'
+                selected: 'false'
             }
         },
         withTags: {
