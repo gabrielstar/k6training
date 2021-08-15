@@ -3,6 +3,10 @@
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  - name: test
+    value: '012_azure/http_get.js'
+
 parameters:
   - name: options
     values:
@@ -13,5 +17,5 @@ steps:
       ls
   - task: k6-load-test@0
     inputs:
-      filename: '011_azure/http_get.js'
+      filename: $(test)
       args: -e options=${{ parameters.options }}
