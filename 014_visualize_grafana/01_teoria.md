@@ -1,9 +1,16 @@
 # Grafana
-https://k6.io/docs/results-visualization/influxdb-+-grafana
 
-#Azure
+K6 jest w stanie wysylać [dane](https://k6.io/docs/getting-started/results-output/) do wielu zewnętrznych serwisów między innymi [Grafany](https://k6.io/docs/results-visualization/influxdb-+-grafana)
+. W tej części:
+- zainstalujemy grafanę/influxdb na Azure VM
+- skonfigurujemy [dashboard](https://grafana.com/grafana/dashboards/2587)
+- wyślemy dane z testu do grafany
 
-na VM - create Ubunutu 20.04
+![grafana](img/grafana.png)
+
+#Azure VM Ubuntu 20.04 - instalacja Grafany
+
+Instalujemy pakiety:
 ```shell
     sudo apt-get update
     sudo apt install influxdb
@@ -11,22 +18,23 @@ na VM - create Ubunutu 20.04
     curl localhost:3000
 ```
 
-Add network Inbound rules for ports:
-8086
-3000
+Konfigurujemy sieć poprzez reguły dla ruchu przychodzącego (inbound rules):
+- otwieramy port 8086 (influxdb)
+- otwieramy port 3000 (grafana UI)
 
-Go to http://${IP}:3000/login , admin:admin
-Verify data can be streamed to indluxdb
+Weryfikujemy instalację `http://${IP}:3000/login` , `admin:admin`
+
+Sprawdzamy czy możemy wysyłać dane do grafany/influxdb (jeśli baza myk6db nie istnieje zostanie utworzona)
+
 ```powershell
     k6 run --out influxdb=http://${IP}:8086/myk6db http_get.js
 ```
-# configure dash
+# Konfigurujemy dashboard
 
-Let us import a dashboard (manage dashobards->import)
-https://grafana.com/grafana/dashboards/2587
-provide ID and resource.
+`) Zaimportujemy [dashboard](https://grafana.com/grafana/dashboards/2587
+) z repozytoriów Community (manage dashobards->import)
 
 
-Run a long test
+2) Puścimy test i zanalizujemy rezultat
 
-k6 run --iterations 100000 --vus 3 --out influxdb=http://20.67.116.11:8086/myk6db http_get.js
+k6 run --iterations 100000 --vus 3 --out influxdb=http://${IP}:8086/myk6db http_get.js
