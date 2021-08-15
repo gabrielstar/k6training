@@ -12,7 +12,7 @@ Tagi mogę być:
 - systemowe (mające konkrente znaczenie w k6 np. name - nazwa żądania HTTP)
   - tagi systemowe można nadpisać (najczęściej używamy tego do grupowania wielu żądań z parameterem w jedną grupę)
     
-Przykłady tagowania:
+Przykłady tagowania (przez użytkownika):
 
 ```javascript
 import http from 'k6/http';
