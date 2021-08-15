@@ -1,6 +1,6 @@
 import { sleep } from "k6";
 import { envs } from "./04_envs.js";
-import { todos } from "./04_submodule.js";
+import { stage } from "./04_submodule.js";
 
 //k6 run .\04_odpowiedz.js --http-debug=full -e env=STAGE
 
@@ -13,6 +13,6 @@ export function setup(){
 }
 export default function main(tc) { //test context can have different names ...
     console.log('Your context: ' + JSON.stringify(tc,null,2))
-    todos(tc['BASE_URL']);
+    stage(tc['BASE_URL']);
     sleep(1);
 }
