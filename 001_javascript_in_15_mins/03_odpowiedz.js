@@ -1,4 +1,4 @@
-//recommended via constructor jak w C# lub JAVA - https://www.linkedin.com/feed/update/urn:li:activity:6832168329235439616/
+//via constructor similar to c# and java - recommended
 class OOO {
     constructor(name, age, voice) {
         this.name = name;
@@ -18,7 +18,7 @@ var OO = function (name, age, voice) {
 var oo = new OO("Romek", 12, function () {
     console.log("blrlrllr")
 })
-//via object literal, recommended
+//via object literal - recommended
 var o = {
     name: "Gabriel",
     age: 37,
@@ -32,11 +32,8 @@ var arr = [ooo];
 arr.push(o);
 arr.unshift(oo);
 
-//wyswietl standardowo
-for (var obj of arr) { //of not in !
+for (var obj of arr) { //of not in
     console.log(obj['name'] + ' at ' + obj.age + " gives a sound like ")
     obj.voice()
 }
-
-//lub z wykorzystaniem lambda syntax
 arr.forEach((e)=>{e.voice()})
