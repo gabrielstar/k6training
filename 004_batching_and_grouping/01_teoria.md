@@ -1,6 +1,6 @@
 # Batching i grupowanie
 
-c
+
 ## Batching
 
 [Batching](https://k6.io/docs/javascript-api/k6-http/batch-requests) służy do wysyłania żądań równolegle. W k6 do batcha można podać albo listę elementów (żądań) albo obiekt.
