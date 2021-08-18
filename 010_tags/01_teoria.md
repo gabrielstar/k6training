@@ -4,13 +4,14 @@
 [Tagów](https://k6.io/docs/using-k6/tags-and-groups/), używa się do kategoryzacji elementów k6 w na ogół w celu filtracji później w wynikach lub w innych elementach k6.
 
 Tagi mogę być:
-- zdefiniowane przez użytkownika, można tagować:
-  - żądania
-  - checki
-  - metryki użytkownika
-  - thresholdy (mogą używać tagów)
+- zdefiniowane przez użytkownika, można tagować np. żądania, scenariusze, ...:
 - systemowe (mające konkrente znaczenie w k6 np. name - nazwa żądania HTTP)
   - tagi systemowe można nadpisać (najczęściej używamy tego do grupowania wielu żądań z parameterem w jedną grupę)
+
+Do tagów najczęsciej odwołujemy się w:
+  - checkach
+  - thresholdach
+  - wynikach
     
 Przykłady tagowania (przez użytkownika):
 

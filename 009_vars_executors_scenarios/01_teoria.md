@@ -20,10 +20,8 @@ Uruchommy test i sprawdźmy wartości tych zmiennych:
 ```
 output
 ```shell
-INFO[0000] Setup: this is user 0  and iter 0 iteration   source=console
 INFO[0000] Test: this is user 1  and iter 0 iteration    source=console
 INFO[0000] Test: this is user 3  and iter 0 iteration    source=console                                                 INFO[0000] Test: this is user 2  and iter 0 iteration    source=console                                                 INFO[0000] Test: this is user 1  and iter 1 iteration    source=console
-INFO[0000] Teardown: this is user 0  and iter 0 iteration  source=console    
 ```
 ## Scnariusze, Executory
 

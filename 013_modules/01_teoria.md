@@ -1,4 +1,4 @@
-#Moduły
+# Moduły
 
 Oprócz grupowania, funckji i tagów do organizacji testów przydaje się pozdział kodu testu na [moduły](https://github.com/grafana/k6-example-woocommerce):
 

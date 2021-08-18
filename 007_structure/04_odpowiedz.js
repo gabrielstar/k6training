@@ -7,7 +7,8 @@ var counter = 0; //każdy VU dostanie kopię
 export function setup() {
     let res = http.get(URL);
     return { //data
-        body: res.body //body is a property
+        body: res.body, //body is a property
+        new: []
     }
 }
 export default function (data) {
@@ -25,8 +26,9 @@ export default function (data) {
         'response code was 201': (res) => res.status == 201,
     });
     //modify
-    data['new'] = "new";
-    console.log(JSON.stringify(data));
+    console.log("--"+__VU + " " + JSON.stringify(data));
+    data['new']=counter;
+    console.log("--"+__VU + " " + JSON.stringify(data));
 
     //dane z init są kopiowane, kopia per VU
     counter+=Math.random(1)*100;

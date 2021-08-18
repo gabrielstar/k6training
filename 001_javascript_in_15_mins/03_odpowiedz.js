@@ -7,7 +7,7 @@ class OOO {
     }
 }
 var ooo = new OOO("Witek", 22, () => {
-    console.log("aasadasdsd")
+    console.log("ooo")
 });
 //via constructor function - not recommended
 var OO = function (name, age, voice) {
@@ -16,14 +16,14 @@ var OO = function (name, age, voice) {
     this.voice = voice;
 }
 var oo = new OO("Romek", 12, function () {
-    console.log("blrlrllr")
+    console.log("oo")
 })
 //via object literal - recommended
 var o = {
     name: "Gabriel",
     age: 37,
-    voice: function () {
-        console.log("arghhh");
+    voice: function (yell="o") {
+        console.log(yell);
     }
 };
 
@@ -33,7 +33,8 @@ arr.push(o);
 arr.unshift(oo);
 
 for (var obj of arr) { //of not in
-    console.log(obj['name'] + ' at ' + obj.age + " gives a sound like ")
-    obj.voice()
+    console.log(obj['name'] + ' aged ' + obj.age + ", gives a sound like: ")
+    obj.voice();
 }
+console.log('and again:')
 arr.forEach((e)=>{e.voice()})

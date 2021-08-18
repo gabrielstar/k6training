@@ -1,7 +1,7 @@
 import http from 'k6/http';
 
 export function setup() {
-    console.log(`Setup: this is user ${__VU}  and iter ${__ITER} iteration`)
+    console.log('Setup')
 }
 export default function () { //https://stackoverflow.com/questions/21117160/what-is-export-default-in-javascript
     http.get('https://appxx.azurewebsites.net/');
@@ -9,5 +9,5 @@ export default function () { //https://stackoverflow.com/questions/21117160/what
 
 }
 export function teardown() {
-    console.log(`Teardown: this is user ${__VU}  and iter ${__ITER} iteration`)
+    console.log('teardown')
 }

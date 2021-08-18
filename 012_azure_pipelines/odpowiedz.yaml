@@ -19,3 +19,6 @@ steps:
     inputs:
       filename: $(test)
       args: -e options=${{ parameters.options }}
+
+#dla dockera można by użyć np:
+#docker run --rm --entrypoint /bin/sh -i -v ${PWD}:/home/k6 loadimpact/k6 -c k6 run -e USERS=1   --include-system-env-vars=false --out csv=/home/k6/out.csv script.js

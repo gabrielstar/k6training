@@ -9,7 +9,7 @@
         voice: ...
     }
 ```
- - Voice powinno być funkcją
+ - voice powinno być funkcją
 
 2. Ziteruj po całej liście i dla każdego obiektu
 - wyświetl name i age,
