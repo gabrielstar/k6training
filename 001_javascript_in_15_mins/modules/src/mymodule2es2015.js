@@ -7,9 +7,13 @@ export const person = { //this can be accessed from other files e.g. k6 uses thi
   email: "Dan"
 }
 
-export function sayHello(){
+export function sayHello() {
   return `hello ${person.name}`
 }
 
-const greeting = 'Hello World again';
-export default greeting; //if we use default then there is no need for curly braces in importing file
+//default keyword allows to omit {} in importing script
+//const greeting = function () { console.log('Hello World again'); };
+//export default greeting; //if we use default then there is no need for curly braces in importing file
+
+//if you export anonymous function then you name it at import so in importing script
+export default function () { console.log(' x Hello World again'); };

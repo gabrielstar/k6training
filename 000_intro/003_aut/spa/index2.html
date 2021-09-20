@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backend app</title>
+</head>
+<body>
+<div>
+    <p id="paragraph">I am a web app with backend. I am becoming a complex being ..</p>
+    <a href="#" id="button1">Let us call backend API 1</a><br /> <!-- it all starts with user action -->
+    <a href="#" id="button2">Let us call backend API 2</a> <!-- it all starts with user action -->
+
+</div>
+<script>
+        document.getElementById('button1').addEventListener("click", function(event){
+            getTextFromBackend('https://jsonplaceholder.typicode.com/todos/1');
+        }); //we will change text for user - register binding for user action
+
+        document.getElementById('button2').addEventListener("click", function(event){
+            getTextFromBackend('https://jsonplaceholder.typicode.com/todos/2');
+        }); //we will change text for user - register binding for user action
+
+        function getTextFromBackend(url){ //the new text is coming from backend. network communication is involved
+            fetch(url)
+              .then(response => response.json())
+              .then(data => {
+                document.getElementById('paragraph').innerText = `Response from backend \r ${url} is \r` + data.title //actually use something to change content based on response
+              });
+        }
+</script>
+</body>
+</html>

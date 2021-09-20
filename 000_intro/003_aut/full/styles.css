@@ -1,0 +1,12 @@
+.nice {
+    color:red;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(Sansation_Light.ttf);
+}
+
+p {
+  font-family: myFirstFont;
+}

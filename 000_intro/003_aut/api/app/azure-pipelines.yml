@@ -1,0 +1,43 @@
+trigger: none
+
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  imageName: 'charity-backend'
+  dockerfilePath: '003_aut/api/app/Dockerfile'
+  dockerRegistryServiceConnection: boostRegistryServiceConnection
+  armServiceConnectionBoost: boost
+  appName: appxx
+  container: appxx.azurecr.io/charity-backend:latest
+
+stages:
+- stage: Build
+  displayName: Test, Build and Push docker image
+  jobs:
+  - job: Build
+    displayName: Test, Build, Push
+    steps:
+    - task: Docker@2
+      displayName: Build and push an image to container registry
+      inputs:
+        command: buildAndPush
+        repository: $(imageName)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          latest
+
+- stage: Deploy
+  displayName: Deploy App
+  jobs:
+  - job:
+    steps:
+    - task: AzureWebAppContainer@1 # Add this at the end of your file
+      displayName: Deploy
+      inputs:
+        azureSubscription: '$(armServiceConnectionBoost)'
+        appName: '$(appname)'
+        containers: $(container)
+

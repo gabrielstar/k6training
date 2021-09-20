@@ -21,6 +21,6 @@ console.log(sayHello())
 import * as mod from './mymodule2es2015' //we can alias all module exports to avoid namespace clashes
 console.log(mod.sayHello());
 
-import greeting from './mymodule2es2015'; //curly braces can be omitted for default exported elements
-console.log(greeting);
+import test from './mymodule2es2015'; //curly braces can be omitted for default exported elements
+test();                               //you can also override func name like this
 
