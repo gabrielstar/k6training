@@ -2,6 +2,8 @@
 #Aby odpalić JSON Server (https://github.com/typicode/json-server)
 
 `
- npm install -g json-server
+ cd .
+ npm init -y
+ npm install json-server
  json-server --watch db.json
 `

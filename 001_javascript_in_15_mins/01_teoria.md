@@ -8,7 +8,7 @@ Przejdziemy wspólnie przez podstawy javascriptu, które umożliwią nam pisanie
 - funkcje, funkcje strzałkowe
 - object literals
 - praca z listami
-- iterowanie po listach i obiektach
+- iterowanie po listach i po właściwośiach obiektów
 - tworzenie i praca z obiektami
 - moduły es6
 
