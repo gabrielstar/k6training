@@ -11,3 +11,5 @@ Przejdziemy wspólnie przez podstawy javascriptu, które umożliwią nam pisanie
 - iterowanie po listach i obiektach
 - tworzenie i praca z obiektami
 - moduły es6
+
+Wyróżniamy JavaScript - po stronie serwera i klienta (przeglądarki). Przykładem JS o stronie serwera jest "node" a po stronie przeglądarki implementacja V8 np, w Chrome. Różnica polega na tym, że środowiskiem uruchomieniowym dla JS serwerajest proces w systemie operacyjnym a dla klienta przeglądarka reprezentowana przez obiekt "window". W k6 środowiskiem uruchomieniowym także jest proces serwera ale nie jest nim proces "nodowy".
