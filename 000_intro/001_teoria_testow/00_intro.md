@@ -90,7 +90,7 @@ K6 przenaczone jest dla:
   
 ## Open Source vs Cloud
 
-Narzędzie jest darmowe ale posiada też płatną wersję, w której mamy dostęp do portalu w Chmurze gdzie możemy puszczać testy bez uterzymywania własnej infrastruktury. 
+Narzędzie jest darmowe ale posiada też płatną wersję, w której mamy dostęp do portalu w Chmurze gdzie możemy puszczać testy bez utrzymywania własnej infrastruktury. 
 
 ![](../img/cloud.webp)
 
@@ -105,18 +105,21 @@ k6 rozwija się bardzo dynamicznie i konkuruje bezpośrednio z takimi narzędzia
 
 ## Co będziemy potrzebowali ?
 
-- IDE (np. IntelliJ)
+- IDE (np. IntelliJ) lub VS Code
 - Git
 - Windows Terminal
-- Azure Subscription - DevOps/Portal
+- Docker, Node
+- Azure Subscription - DevOps/Portal (opcja)
 
 ### Zasady i organizacja szkolenia?
 
-- Szkolenie jest typu "hands on". Po każdej paczce teorii, robimy ćwiczenia, jedna osoba z grupy prezentuje rozwiązanie.
+- Szkolenie jest typu "hands on". Jest ono podzielone na moduły. Po każdej paczce teorii, robimy ćwiczenia, jedna osoba z grupy prezentuje rozwiązanie.
 - Co mniej więcej 1h robimy 5 minut przerwy.
 - O 12:00 40 minut przerwy obiadowej.
 - Kamerki są mile widziane kiedy zadajemy pytania albo prezentujemy rozwiązanie.
 
 ### Kilka słów o Was na podstawie ankiety
+
+( ... )
 
 
