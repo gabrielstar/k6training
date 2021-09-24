@@ -30,7 +30,9 @@ Moje szkolenia:
 
 Na tym szkoleniu poznacie podstawy k6. Agenda:
 
+- Wstęp
 - HTTP - przypomnienie najważniejszych informacji
+- Rodzaj testów i rodzaje aplikacji testowanych (SPA, MPA, ..)
 - JavaScript w 15 minut
 - Instalujemy k6
 - Pierwszy test
