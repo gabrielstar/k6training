@@ -38,6 +38,7 @@ shout();
 yell();
 scream();
 
+//object literal
 const o = {
   name: "Gab",
   intro: function () {
@@ -45,6 +46,7 @@ const o = {
   }
 }
 
+//constructor function
 const O2 = function (name, intro) {
   this.name = name;
   this.intro = intro;
@@ -54,6 +56,7 @@ const o2 = new O2("Rick", () => {
 });
 o2.intro();
 
+//es6 classes - syntactic sugar
 class O3 {
   constructor(name) {
     this.name = "name"
@@ -74,7 +77,7 @@ o3.outro();
 const check = (value, conditions) => {
   console.log(`Evaluating ${value}`);
   for (cond in conditions) {//iterate props
-    console.log(`- ${cond} -> ${conditions[cond].call(this, value)} `)
+    console.log(`- ${cond} -> ${conditions[cond](value)} `)
   }
 }
 check("check", {
@@ -94,3 +97,13 @@ arr.forEach((element) => {
 
 const [a,b,...rest] = [1,2,3,4,4]
 console.log(rest)
+
+//JSON vs JS Object
+const gabriel = {
+  name: "Gabriel"
+}
+console.log(gabriel); //object
+const json = JSON.stringify(gabriel)// JSON represntation
+console.log(json) //JSON
+const from_json = JSON.parse(json)// to object again
+console.log(from_json.name)
