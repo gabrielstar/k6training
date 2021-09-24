@@ -17,4 +17,6 @@ export default function () {
     };
 
     http.post(url, payload, params);
+    let res = http.post('urlHere', 'body', { 'headers': 'nameOfHeaders' });
+    
 }
