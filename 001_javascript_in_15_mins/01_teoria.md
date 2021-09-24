@@ -6,10 +6,10 @@ Przejdziemy wspólnie przez podstawy javascriptu, które umożliwią nam pisanie
 
 - let,const
 - funkcje, funkcje strzałkowe
-- object literals
+- object literals, klasy es6
 - praca z listami
 - iterowanie po listach i po właściwośiach obiektów
 - tworzenie i praca z obiektami
 - moduły es6
 
-Wyróżniamy JavaScript - po stronie serwera i klienta (przeglądarki). Przykładem JS o stronie serwera jest "node" a po stronie przeglądarki implementacja V8 np, w Chrome. Różnica polega na tym, że środowiskiem uruchomieniowym dla JS serwerajest proces w systemie operacyjnym a dla klienta przeglądarka reprezentowana przez obiekt "window". W k6 środowiskiem uruchomieniowym także jest proces serwera ale nie jest nim proces "nodowy".
+Wyróżniamy JavaScript - po stronie serwera i klienta (przeglądarki). Przykładem JS o stronie serwera jest "node" a po stronie przeglądarki implementacja V8 np, w Chrome. Różnica polega na tym, że środowiskiem uruchomieniowym dla JS serwera jest proces w systemie operacyjnym a dla klienta przeglądarka reprezentowana przez obiekt "window". W k6 środowiskiem jest proces serwera ale nie jest nim proces "nodowy". JavaScript jest językiem opisu testu ale za wykonanie testu odpowiada silnik Go.
