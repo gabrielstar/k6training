@@ -12,7 +12,7 @@ export default function () {
         sendPost();
         sendGet();
     });
-
+    
 }
 
 function sendPost() {
