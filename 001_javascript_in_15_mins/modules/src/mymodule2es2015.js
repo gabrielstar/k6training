@@ -16,4 +16,4 @@ export function sayHello() {
 //export default greeting; //if we use default then there is no need for curly braces in importing file
 
 //if you export anonymous function then you name it at import so in importing script
-export default function () { console.log(' x Hello World again'); };
+export default function () { console.log(' x Hello World again 2'); };
