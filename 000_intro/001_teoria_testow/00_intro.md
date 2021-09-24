@@ -40,7 +40,7 @@ Na tym szkoleniu poznacie podstawy k6. Agenda:
 - Checki (sprawdzenia)
 - Thresholdy (Quality Gate'y)
 - Struktura testu
-- Cookiesy
+- Użyteczne funkcje: Ciasteczka i ekstraktory
 - Zmienne wbudowane i zewnętrzne
 - Tagowanie
 - Testowanie stron webowych
