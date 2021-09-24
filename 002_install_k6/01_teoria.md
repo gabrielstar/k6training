@@ -26,6 +26,10 @@ Podstawowe polecenia w CLI:
 
 ***
 Zainstalujemy plugin do [IDE Intellij Enterprise edition (wersja 2021.1.3).](https://plugins.jetbrains.com/plugin/16141-k6/versions)
-Alternatywnie zainstalujcie plugin dla swojego IDE pierwszego wyboru.
+Alternatywnie zainstalujcie plugin dla swojego IDE pierwszego wyboru. Np dla VS code warto zainstalować:
+- k6 for Visual Studio Code
+- k6 snippets
+
+![snippet](img/snippet.png)
 
 W k6 zamiast wątka (thread) używa się terminu "Virtual User (VU)".
