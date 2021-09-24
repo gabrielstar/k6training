@@ -1,6 +1,7 @@
 # JavaScript w 15 minut.
 
 ![js](img/js.png)
+![go](img/go.png)
 
 Językiem opisu testów w k6 jest zwykły JavaScript (tak typescript też może być użyty ...). Do pisania testów wystarczy podstawowa znajomośc syntaktyki [javascript](https://learnxinyminutes.com/)
 
@@ -10,7 +11,7 @@ Przejdziemy wspólnie przez podstawy javascriptu, które umożliwią nam pisanie
 - funkcje, funkcje strzałkowe
 - object literals, klasy es6
 - praca z listami
-- iterowanie po listach i po właściwośiach obiektów
+- iterowanie po listach i po właściwościach obiektów
 - tworzenie i praca z obiektami
 - moduły es6
 
