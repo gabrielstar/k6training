@@ -5,7 +5,7 @@ Witajcie na szkoleniu z testów wydajnościowych
 ### Kim jestem ?
 
 Nazywam się Gabriel Starczewski. Swoją karierę zaczynałem jako deweloper PHP. Następnie przez wiele lat bylem managerem zespołów IT w tym SRE, IT Supportu, Monitoringu oraz Architektem Testów (IBM, Credit Suisse, Capgemini).
-Obecnie jestem freelancerem,konsultantem w roli Test Architekta/Testera wydajnościowego.
+Obecnie jestem freelancerem i konsultantem w roli Test Architekta/Testera wydajnościowego.
 
 ![gabriel](img/me.png)
 
