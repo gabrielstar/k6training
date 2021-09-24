@@ -45,8 +45,7 @@ Przydatne komendy:
 Windows
 ```powershell
     Invoke-WebRequest -UseBasicParsing -Uri https://bing.com -Method GET
-    Invoke-WebRequest -UseBasicParsing -Uri https://bing.com -Method GET  | Select-Object -ExpandProperty RawContent
-
+    Invoke-WebRequest -UseBasicParsing -Uri https://bing.com -Method GET  | Select-Object -ExpandProperty Content
 ```
 Linux (https://curl.se/docs/httpscripting.html)
 ```console
@@ -74,8 +73,7 @@ W testach wydajnościowych musimy rozumieć jak działa przeglądarka lecz na co
 Z pomocą linii polecen (bash/powershell) dla dowolnego adresu URL spróbuj wykonać metody HEAD,GET,TRACE, OPTIONS np:
 
 ```powershell
-        Invoke-WebRequest https://red-water-022d04b03.azurestaticapps.net/ -Method OPTIONS | 
-            Select-Object -ExpandProperty Headers 
+        Invoke-WebRequest -Uri https://red-water-022d04b03.azurestaticapps.net/ -Method OPTIONS | Select-Object -ExpandProperty Headers 
 ```
 
 
