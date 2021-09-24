@@ -45,6 +45,8 @@ Przydatne komendy:
 Windows
 ```powershell
     Invoke-WebRequest -UseBasicParsing -Uri https://bing.com -Method GET
+    Invoke-WebRequest -UseBasicParsing -Uri https://bing.com -Method GET  | Select-Object -ExpandProperty RawContent
+
 ```
 Linux (https://curl.se/docs/httpscripting.html)
 ```console
