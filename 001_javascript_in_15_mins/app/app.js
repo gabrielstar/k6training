@@ -107,3 +107,8 @@ const json = JSON.stringify(gabriel)// JSON represntation
 console.log(json) //JSON
 const from_json = JSON.parse(json)// to object again
 console.log(from_json.name)
+
+
+//setting defautl values
+const a = ''
+const b = a || 'c'; //c

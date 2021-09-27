@@ -14,8 +14,8 @@
     Content-Type: application/json
 
     {
-        "body": "k6",
-        "title": "Post from k6"
+        "body": "Gabriel",
+        "title": "Post od Gabriela"
     }
 ```   
 Do implementacji użyj natywnego [request](https://k6.io/docs/javascript-api/k6-http/request-method-url-body-params) to znaczy zamiast stosować:
@@ -29,5 +29,5 @@ użyj
    http.request(...);
 ```
 
-
+Uruchom 5 iteracji testu wykorzystując do tego 5 użytkowników.
 

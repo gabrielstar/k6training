@@ -14,13 +14,20 @@ Z linii poleceń możemy:
 
 Przykłady:
 
+### podanie zmiennej z linii poleceń
+
 ```powershell
     k6 run -e BODY="my perfect body" http_post_env.js
 ```
 
-w drugim przypadku musimy użyc parametru `--include-system-env-vars`
+### użycie zmiennej środowiskowej powłoki (domyślnie true)
 
 ```powershell
-    $Env:BODY = "new body"; k6 run --include-system-env-vars http_post_env.js
+    $Env:BODY = "new body"; k6 run --http-debug=full http_post_env.js
 ```
 
+Aby wyłączyć czytanie zmiennych środowiskowych powłoki:
+
+```powershell
+    $Env:BODY = "new body"; k6 run --include-system-env-vars=false --http-debug=full http_post_env.js
+```

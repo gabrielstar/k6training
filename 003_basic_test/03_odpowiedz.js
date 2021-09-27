@@ -1,5 +1,5 @@
 import http from 'k6/http';
-import {sleep} from 'k6';
+import { sleep } from 'k6';
 
 const URL = "https://appxx.azurewebsites.net/"
 
@@ -16,8 +16,8 @@ function sendPost() {
             "body": "k6 x " + Math.random(),
             "title": "Post from Gabriel's k6"
         }
-        )
-    ;
+    )
+        ;
     let params = {
         headers: {
             'Content-Type': 'application/json',
