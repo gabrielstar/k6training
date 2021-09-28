@@ -14,5 +14,9 @@ Napisz taki test:
                "title": "..."
          }
  ```
-    
-4. Zmodyfikuj zawartosc danych (data) w fazie **VU**. Czy modyfikacja widoczna jest w fazie **teardown**? Sprawdź.  
+
+4. Dodaj checka na status code === 201   
+5. Zmodyfikuj zawartosc danych (data) w fazie **VU**. Czy modyfikacja widoczna jest w fazie **teardown**? Sprawdź.  
+6. Zdefiniuj w fazie init zmienną counter=0, zinkrementuj ją w fazie VU i wypisz na konsolę:
+      -  czy zmiana jest widoczna pomiędzy iteracjami ?
+      -  czy inni użytkownicy widzą zmianę czy mają własne kopie zmiennej counter ?

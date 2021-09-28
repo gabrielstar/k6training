@@ -7,7 +7,7 @@ export function setup() {
     let res = http.get(URL);
     return { //data
         body: res.body, //body is a property
-        new: []
+        counter: 0
     }
 }
 export default function (data) {
@@ -24,12 +24,12 @@ export default function (data) {
     check(res, {
         'response code was 201': (res) => res.status == 201,
     });
-    
-    counter += __VU; //modyfikacja zmiennej z init, kazdy VU dostaje kopie lokalna
-    console.log(`counter od ${__VU}:` + counter) //pracujemy na kopii w zakresie 1 VU
-    //modyfikacja obiektu z setup
-    data['new'] = counter; //podobnie zmiany beda zachowane tylko w ramach iteracji tego samego VU
-    console.log("data od " + __VU + " " + JSON.stringify(data));
+
+    counter +=1; //modyfikacja zmiennej z init, kazdy VU dostaje kopie lokalna
+    data['counter'] += 1; //modyfikacja obiektu z setup  podobnie zmiany beda zachowane tylko w ramach iteracji tego samego VU
+
+    console.log(`init counter od ${__VU}-${__ITER} = ` + counter) //pracujemy na kopii w zakresie 1 VU
+    console.log(`setup data od ${__VU}-${__ITER} = ` + JSON.stringify(data));
 
 }
 
