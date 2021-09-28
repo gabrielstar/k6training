@@ -16,22 +16,25 @@ let optionsScenarios = {
             executor: 'ramping-vus',
             startVUs: 0,
             stages: [
-                {duration: '10s', target: 10}
-            ]
+                { duration: '10s', target: 10 }
+            ],
+            exec: 'buyers'
         },
         bots: {
             executor: 'ramping-vus',
             startVUs: 0,
             stages: [
-                {duration: '10s', target: 5}
-            ]
+                { duration: '10s', target: 5 }
+            ],
+            exec: 'bots'
         },
         customers: {
             executor: 'constant-vus',
             vus: 15,
             startTime: '10s',
             duration: '10s',
-            tags: {type: 'main load'}
+            tags: { type: 'main load' },
+            exec: 'customers'
         }
     }
 
@@ -43,9 +46,21 @@ export function setup() {
 }
 
 
-export default function () { //https://stackoverflow.com/questions/21117160/what-is-export-default-in-javascript
+export function customers() { //https://stackoverflow.com/questions/21117160/what-is-export-default-in-javascript
     http.get('https://appxx.azurewebsites.net/');
-    console.log(`Test: this is user ${__VU}  and iter ${__ITER} iteration`)
+    console.log('Running customer iteration')
+
+}
+
+export function bots() { //https://stackoverflow.com/questions/21117160/what-is-export-default-in-javascript
+    http.get('https://appxx.azurewebsites.net/');
+    console.log('Running bots iteration')
+
+}
+
+export function buyers() { //https://stackoverflow.com/questions/21117160/what-is-export-default-in-javascript
+    http.get('https://appxx.azurewebsites.net/');
+    console.log('Running buyers iteration')
 
 }
 

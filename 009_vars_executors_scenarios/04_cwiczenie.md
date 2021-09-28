@@ -1,8 +1,19 @@
 ## Scenariusz i egzekutory
 
-1. Zmodyfikuj scenariusz aby opcje zawierały scenariusz gdzie executor to 'per-vu-iterations'. Uruchom z `--vus=3` i `--iterations=4`. 
+1. Zmodyfikuj test `http_get.js` aby opcje zawierały 1 scenariusz gdzie executor to 'per-vu-iterations'. Uruchom z `--vus=3` i `--iterations=4`. 
+
+```javscript
+  export options = {
+    scenarios: {
+        myScenario: {
+            ...
+        }
+    }
+};
+```
 2. Rozszerz test z tego modułu (`http_get.js`) tak, aby:
-- konfiguracja składała się z 3 scenariuszy symulując wzrost i spadek aktywnych użytkowników w trakcie testu
+- opcje składały się z 3 scenariuszy symulując wzrost i spadek aktywnych użytkowników w trakcie testu wg schematu:
+
     - **scenariusz 1**: 
       - czas trwania 0-10s 
       - liczba użytkowników rośnie: od 0 do 10 VU
@@ -30,3 +41,4 @@ np:
         }
 ```
 - dobierz egzekutory do scenariuszy na podstawie dokumentacji.
+- niech każdy scenariusz ma inną funkcje __VU__
