@@ -46,14 +46,20 @@ Tagi systemowe
 (...)
 
 ***
-Uruchomimy test i sprawdzimy jak tagi z kodu powyżej prezentują się w wynikach (w pliku csv):
+Uruchomimy test i sprawdzimy jak tagi z kodu powyżej prezentują się w wynikach (w pliku csv - w nagłówku):
 
 ```powershell
 k6 run .\02_teoria.js --out csv
 ```
 
-Następnie przeanalizujemy drugi przykład wyorzystania tagów do agregacji żądań
+Następnie przeanalizujemy drugi przykład wykorzystania tagów do agregacji żądań
 
 ```powershell
 k6 run .\02_tags.js --out csv
+```
+
+Do pliku CSV można zaglądać jak mamy wątpliwość jaki jest selektor dla danego taga np:
+
+```
+    group:::grupa1::grupa2
 ```
