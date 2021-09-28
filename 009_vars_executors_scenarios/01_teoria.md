@@ -27,22 +27,32 @@ INFO[0000] Test: this is user 3  and iter 0 iteration    source=console         
 
 ### Scenariusze
 [Scenariusze](https://k6.io/docs/using-k6/scenarios) są elementem Opcji i pozwalają na tworzenie bardziej zaawansowanych konfiguracji testowych, takich składających się z wielu 
-pod konfiguracji.
+podkonfiguracji. Scenariusze mogą wskazywać na różne bloki __VU__ (iteracje użytkownika). Jeśli tak jest opuszczamy słówko __default__.
 
 ```javascript
 export let options = {
     scenarios: {
         smoke: {
             vus: 1,
+            exec: smokeLoad,
             ...
         },
         stress: {
             vus: 100,
+            exec: stressLoad
             ...
         }
     }
 
 };
+
+export function smokeLoad() { 
+    ...
+}
+
+export function stressLoad() { 
+    ...
+}
 ```
 
 Scnariusze:
@@ -55,3 +65,5 @@ Scnariusze:
 
 [Egzekutory](https://k6.io/docs/using-k6/scenarios/executors/) rozdzielają VU i iteracje. Każdy robi to w trochę inny sposób i tester powinien dopasować najlepszy egzekutor do sytuacji.
 ![cookies](img/executors.png)
+
+Spójrzmy jak może być wykorzystany egzekutor 'externally-controlled'. Jednym z zastosowań może być na przykład przyspieszenie procesu CI/CD.
