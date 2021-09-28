@@ -24,7 +24,7 @@ export let options = {
 };
 
 export function setup() {
-    console.log(`Setup: this is user ${__VU}  and iter ${__ITER} iteration`)
+    console.log('Setup')
 }
 
 export function noTags() {
@@ -41,5 +41,5 @@ export function withTags() {
 }
 
 export function teardown() {
-    console.log(`Teardown: this is user ${__VU}  and iter ${__ITER} iteration`)
+    console.log('Teardown')
 }
