@@ -6,7 +6,7 @@ W tej części poznamy _checki_ - podstawowy mechanizm ewaluacji żądań i odpo
 
 W skrócie w k6 mamy 2 mechanizmy sprawdzeń:
 
-- **Check'i** = Asercje bez konsekwencji, używane do weryfikacji samego testu
+- **Check'i** = Asercje bez konsekwencji, używane do weryfikacji samego testu (status code nadal będzie 0 (linux), True (windows))
 - **Threshold'y** = Asercje z konsekwencjami, niespełnienie warunków, że test ma status FAIL, używane do markowania testu jako PASS/FAIL. Można je traktować jako swoiste Quality Gate'y.
 
 Użycie check'ów (sprawdzeń) powoduje, że kod testu jest:
